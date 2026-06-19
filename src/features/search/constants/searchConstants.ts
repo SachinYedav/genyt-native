@@ -1,0 +1,6 @@
+export const SEARCH_DEBOUNCE_MS = 200;
+export const SEARCH_HISTORY_LIMIT = 25;
+export const SEARCH_HISTORY_VISIBLE_LIMIT = 10;
+export const SEARCH_SUGGESTION_CACHE_LIMIT = 60;
+export const SEARCH_SUGGESTION_LIMIT = 10;
+export const SEARCH_RESULT_LIMIT = 20;

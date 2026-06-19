@@ -1,0 +1,68 @@
+{
+  "expo": {
+    "name": "GenYT Pro",
+    "slug": "genyt-native",
+    "version": "1.0.0",
+    "scheme": "genyt",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "automatic",
+    "android": {
+      "package": "com.genyt.mobile",
+      "adaptiveIcon": {
+        "backgroundColor": "#FFFFFF",
+        "foregroundImage": "./assets/android-icon-foreground.png",
+        "backgroundImage": "./assets/android-icon-background.png",
+        "monochromeImage": "./assets/android-icon-monochrome.png"
+      },
+      "predictiveBackGestureEnabled": false,
+      "permissions": [
+        "android.permission.FOREGROUND_SERVICE",
+        "android.permission.FOREGROUND_SERVICE_DATA_SYNC",
+        "android.permission.POST_NOTIFICATIONS"
+      ]
+    },
+    "plugins": [
+      "expo-image",
+      "expo-sqlite",
+      "expo-sharing",
+      [
+        "expo-splash-screen",
+        {
+          "image": "./assets/splash-icon.png",
+          "resizeMode": "contain",
+          "backgroundColor": "#FFFFFF",
+          "imageWidth": 200,
+          "dark": {
+            "image": "./assets/splash-icon.png",
+            "resizeMode": "contain",
+            "backgroundColor": "#0F0F0F"
+          }
+        }
+      ],
+      [
+        "expo-build-properties",
+        {
+          "android": {
+            "compileSdkVersion": 36,
+            "targetSdkVersion": 36,
+            "minSdkVersion": 26,
+            "enableProguardInReleaseBuilds": true,
+            "shrinkResources": true,
+            "enableMinifyInReleaseBuilds": true,
+            "extraProguardRules": "-dontwarn javax.script.**\n-dontwarn org.mozilla.javascript.**\n-keep class com.margelo.nitro.genyt.extractor.** { *; }\n-keepclassmembers class com.margelo.nitro.genyt.extractor.** { *; }\n-keep class org.schabi.newpipe.** { *; }\n-keep class com.grack.nanojson.** { *; }\n-keep class com.google.protobuf.** { *; }\n-keepclassmembers class * extends com.google.protobuf.GeneratedMessageLite { *; }\n-keepclassmembers enum * extends com.google.protobuf.Internal$EnumLite { *; }"
+          }
+        }
+      ],
+      "./withGenytNative.js"
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "81c00eb4-0a32-44f0-8e79-968f9a873c9c"
+      }
+    },
+    "ios": {
+      "bundleIdentifier": "com.genyt.mobile"
+    }
+  }
+}

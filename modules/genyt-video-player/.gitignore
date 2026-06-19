@@ -1,0 +1,22 @@
+# OSX
+.DS_Store
+
+# Node
+node_modules/
+npm-debug.log
+yarn-error.log
+
+# Android/IJ
+android/build/
+.classpath
+.cxx
+.gradle
+.idea
+.project
+.settings
+local.properties
+*.iml
+
+# Expo
+.expo/
+build/

@@ -1,0 +1,9 @@
+{
+  "platforms": ["android"],
+  "android": {
+    "modules": [
+      "expo.modules.genytvideoplayer.GenytVideoPlayerModule",
+      "expo.modules.genytvideoplayer.GenytDownloadBridge"
+    ]
+  }
+}
