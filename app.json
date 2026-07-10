@@ -54,7 +54,8 @@
           }
         }
       ],
-      "./withGenytNative.js"
+      "./plugins/with-abi-splits.js",
+      "./plugins/withGenytNative.js"
     ],
     "extra": {
       "eas": {
