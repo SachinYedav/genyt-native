@@ -5,6 +5,9 @@
     "androidNamespace": ["genyt", "extractor"],
     "androidCxxLibName": "NitroGenytYoutubeExtractor"
   },
+  "ios": {
+    "iosModuleName": "NitroGenytYoutubeExtractor"
+  },
   "autolinking": {
     "YoutubeExtractor": {
       "android": {
