@@ -44,6 +44,8 @@ jobs:
 
       - name: Build Unsigned Release APKs
         working-directory: ./android
+        env:
+          GRADLE_OPTS: "-Dorg.gradle.jvmargs=-Xmx4g -XX:MaxMetaspaceSize=1g"
         run: ./gradlew assembleRelease --no-daemon
 
       - name: Install Build Tools 29.0.3 for Sign Action
